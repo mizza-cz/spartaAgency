@@ -1,0 +1,54 @@
+.serviceCard {
+  padding: 36px 32px 20px 32px;
+  display: block;
+  border-radius: 10px;
+  position: relative;
+  height: 100%;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: var(--border-gradients);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    z-index: 1;
+  }
+  &__icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 20px 0px #ffffff5e;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-light);
+    font-size: 40px;
+    font-weight: 700;
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      padding: 1px;
+      background: var(--border-gradients);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+      z-index: 1;
+    }
+    img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+    }
+  }
+}

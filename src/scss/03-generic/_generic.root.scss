@@ -1,0 +1,15 @@
+:root {
+  --color-light: #fff;
+  --color-dark: #000;
+  --color-primary: #0c0c0c;
+
+  --border-gradients: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.45) 0%,
+    rgba(153, 153, 153, 0.45) 100%
+  );
+
+  --border-service: linear-gradient(315deg, #ffffff 0%, #999999 100%);
+
+  --bg-gradient: linear-gradient(104.6deg, #191919 0%, #0c0c0c 100%);
+}

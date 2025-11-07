@@ -1,0 +1,23 @@
+.projectCard {
+  text-decoration: none;
+  &:hover {
+    .projectCard__img img {
+      transform: scale(1.05);
+    }
+  }
+  &__img {
+    width: 100%;
+    aspect-ratio: 428/532;
+    border-radius: 10px;
+    overflow: hidden;
+    @include media-breakpoint-down(lg) {
+      aspect-ratio: 428/428;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.3s;
+    }
+  }
+}
