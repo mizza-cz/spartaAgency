@@ -27,4 +27,10 @@
 .bg-primary {
   background: var(--color-primary) !important;
 }
+.hover-outline{
+  text-decoration-color: transparent;
+  &:hover{
+    text-decoration-color: inherit;
+  }
+}
 /*! purgecss end ignore */

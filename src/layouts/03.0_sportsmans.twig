@@ -1,7 +1,15 @@
-<section class="hp-sportsmans pb-lg-20 pb-12">
+{% extends "@components/base/base.twig" %} {% set title = "03.0_sportsmans" %}
+{% block main %}
+
+<section class="bg-gradient py-lg-20 py-12">
   <div class="container">
-    <div class="row g-xxl-20 g-10 gy-md-10 gy-8">
-      <div class="col-lg-4">
+    <h1 class="h2 title title--dot text-white mb-lg-17 mb-10">
+      NAŠE <span>SLUŽBY</span>
+    </h1>
+
+    <div class="row gx-xxl-20 gx-10 gy-xxl-18 gy-md-14 gy-10">
+      {% for i in 1..3 %}
+      <div class="col-xl-4 col-md-6">
         <a href="#" class="sportsmanCard">
           <div class="sportsmanCard__img">
             <img
@@ -13,19 +21,19 @@
           <div
             class="d-flex gap-3 align-items-center justify-content-between mt-4"
           >
-            <div class="text-primary">
+            <div class="text-white">
               <div class="text-md-medium">Petra</div>
               <div class="text-lg-black">Kvitová</div>
             </div>
             <img
-              src="images/ico/arrow-link.svg"
+              src="images/ico/arrow-link-white.svg"
               class="ico-arrowCard"
               alt="arrow"
             />
           </div>
         </a>
       </div>
-      <div class="col-lg-4">
+      <div class="col-xl-4 col-md-6">
         <a href="#" class="sportsmanCard">
           <div class="sportsmanCard__img">
             <img
@@ -37,19 +45,19 @@
           <div
             class="d-flex gap-3 align-items-center justify-content-between mt-4"
           >
-            <div class="text-primary">
+            <div class="text-white">
               <div class="text-md-medium">Petra</div>
               <div class="text-lg-black">Kvitová</div>
             </div>
             <img
-              src="images/ico/arrow-link.svg"
+              src="images/ico/arrow-link-white.svg"
               class="ico-arrowCard"
               alt="arrow"
             />
           </div>
         </a>
       </div>
-      <div class="col-lg-4">
+      <div class="col-xl-4 col-md-6">
         <a href="#" class="sportsmanCard">
           <div class="sportsmanCard__img">
             <img
@@ -61,21 +69,20 @@
           <div
             class="d-flex gap-3 align-items-center justify-content-between mt-4"
           >
-            <div class="text-primary">
+            <div class="text-white">
               <div class="text-md-medium">Petra</div>
               <div class="text-lg-black">Kvitová</div>
             </div>
             <img
-              src="images/ico/arrow-link.svg"
+              src="images/ico/arrow-link-white.svg"
               class="ico-arrowCard"
               alt="arrow"
             />
           </div>
         </a>
       </div>
-    </div>
-    <div class="text-center mt-9">
-      <a href="#" class="btn-dark"> DALŠÍ SPORTOVCI </a>
+      {% endfor %}
     </div>
   </div>
 </section>
+{% include "@components/joinUs-section/joinUs-section.twig" %} {% endblock %}

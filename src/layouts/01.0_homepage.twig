@@ -1,9 +1,6 @@
 {% extends "@components/base/base.twig" %} {% set title = "01.0_homepage" %} {%
-block main %} {% include "@components/hero-section/hero-section.twig" %}
-
- 
-{% include "@components/hp-sportsmans/hp-sportsmans.twig" %}
-{% include "@components/hp-services/hp-services.twig" %}
- {% include "@components/hp-projects/hp-projects.twig" %}
- 
-{% endblock %}
+block main %} {% include "@components/hero-section/hero-section.twig" %} {%
+include "@components/hp-sportsmans/hp-sportsmans.twig" %} {% include
+"@components/hp-services/hp-services.twig" %} {% include
+"@components/hp-projects/hp-projects.twig" %} {% include
+"@components/partnersSlider/partnersSlider.twig" %} {% endblock %}

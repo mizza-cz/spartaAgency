@@ -64,13 +64,16 @@
 								<a href="#" class="navbar__menu-item">PROJEKTY </a>
 							</li>
 							<li class="navbar__menu-list">
-								<a href="#" class="navbar__menu-item"> PROJEKTY </a>
+								<a href="#" class="navbar__menu-item"> O NÁS </a>
 							</li>
 							<li class="navbar__menu-list">
 								<a href="#" class="navbar__menu-item"> Kontakt </a>
 							</li>
 						</ul>
 					</nav>
+					<button class="c-header__opener js-header__opener" type="button">
+						<span></span>
+					</button>
 				</div>
 			</div>
 		</header>
@@ -85,8 +88,8 @@
 							<div class="hero-logo__title">SpartaAgency</div>
 						</div>
 						<div class="hero-section__content">
-							<h1 class="h1 title">ŠTÍT <span>VÍTĚZŮ</span></h1>
-							<p class="mb-7 text-lg-medium text-white mt-6">
+							<h1 class="h1 title title--dot">ŠTÍT <span>VÍTĚZŮ</span></h1>
+							<p class="mb-lg-7 mb-5 text-lg-medium text-white mt-lg-6 mt-4">
 								My se staráme, vy vítězíte!
 							</p>
 							<div class="d-flex gap-4 justify-content-center flex-wrap">
@@ -97,10 +100,9 @@
 					</div>
 				</div>
 			</section>
-
-			<section class="hp-sportsmans pb-20">
+			<section class="hp-sportsmans pb-lg-20 pb-12">
 				<div class="container">
-					<div class="row g-xxl-20 g-10">
+					<div class="row g-xxl-20 g-10 gy-md-10 gy-8">
 						<div class="col-lg-4">
 							<a href="#" class="sportsmanCard">
 								<div class="sportsmanCard__img">
@@ -111,7 +113,7 @@
 										<div class="text-md-medium">Petra</div>
 										<div class="text-lg-black">Kvitová</div>
 									</div>
-									<img src="images/ico/arrow-link.svg" width="50" height="19" class="object-fit-contain" alt="arrow" />
+									<img src="images/ico/arrow-link.svg" class="ico-arrowCard" alt="arrow" />
 								</div>
 							</a>
 						</div>
@@ -125,7 +127,7 @@
 										<div class="text-md-medium">Petra</div>
 										<div class="text-lg-black">Kvitová</div>
 									</div>
-									<img src="images/ico/arrow-link.svg" width="50" height="19" class="object-fit-contain" alt="arrow" />
+									<img src="images/ico/arrow-link.svg" class="ico-arrowCard" alt="arrow" />
 								</div>
 							</a>
 						</div>
@@ -139,7 +141,7 @@
 										<div class="text-md-medium">Petra</div>
 										<div class="text-lg-black">Kvitová</div>
 									</div>
-									<img src="images/ico/arrow-link.svg" width="50" height="19" class="object-fit-contain" alt="arrow" />
+									<img src="images/ico/arrow-link.svg" class="ico-arrowCard" alt="arrow" />
 								</div>
 							</a>
 						</div>
@@ -149,7 +151,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="bg-gradient pt-20 pb-40">
+			<section class="bg-gradient pt-lg-20 pt-12 pb-lg-40 pb-12">
 				<div class="container">
 					<h2 class="h2 title text-white mb-lg-15 mb-10">NAŠE <span>SLUŽBY</span></h2>
 					<div class="row gx-xl-20 gx-md-10 gx-8 gy-md-10 gy-8">
@@ -214,7 +216,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="hp-projects py-20">
+			<section class="hp-projects py-lg-20 py-12">
 				<div class="container">
 					<h4 class="h2 title text-black mb-lg-15 mb-10">
 						NAŠE <span>PROJEKTY</span>
@@ -230,7 +232,7 @@
 								</div>
 								<div class="d-flex gap-3 align-items-center justify-content-between mt-4">
 									<div class="text-lg-black text-black">Livesport Prague Open</div>
-									<img src="images/ico/arrow-link.svg" width="50" height="19" class="object-fit-contain" alt="arrow" />
+									<img src="images/ico/arrow-link.svg" class="ico-arrowCard" alt="arrow" />
 								</div>
 							</a>
 						</div>
@@ -244,7 +246,7 @@
 								</div>
 								<div class="d-flex gap-3 align-items-center justify-content-between mt-4">
 									<div class="text-lg-black text-black">Livesport Prague Open</div>
-									<img src="images/ico/arrow-link.svg" width="50" height="19" class="object-fit-contain" alt="arrow" />
+									<img src="images/ico/arrow-link.svg" class="ico-arrowCard" alt="arrow" />
 								</div>
 							</a>
 						</div>
@@ -260,7 +262,7 @@
 									<div class="text-lg-black text-black">
 										Livesport Prague Open Prague Open
 									</div>
-									<img src="images/ico/arrow-link.svg" width="50" height="19" class="object-fit-contain" alt="arrow" />
+									<img src="images/ico/arrow-link.svg" class="ico-arrowCard" alt="arrow" />
 								</div>
 							</a>
 						</div>
@@ -271,50 +273,77 @@
 					</div>
 				</div>
 			</section>
-
-		</main>
-		<footer class="footer">
-			<div class="bg-white">
-				<div class="container">
-					<div class="text-center text-black">
-						PŘIDEJTE SE K NÁM!
-						<a href="mailto:sparta@agency.cz" class="mt-4 text-black text-lg-black ">sparta@agency.cz</a>
-
-					</div>
-				</div>
-			</div>
-			<div class="bg-primary">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-4">
-							<a href="#" class="footer__logo">
-								<img src="images/content/logo.png" loading="lazy" alt="logo" />
+			<section class="partnersSlider">
+				<h6 class="h3 title mb-8 text-center text-primary justify-content-center">
+					PARTNEŘI <span>AGENTURY</span>
+				</h6>
+				<div class="swiper partners-swiper">
+					<ul role="list" class="swiper-wrapper infinite-scroll-swiper justify-content-lg-center">
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/p-6.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
 							</a>
-							<div class="text-lg-medium mt-8">
-								© Sparta Agency &
-								<a href="https://esportsmedia.cz/">eSports.cz s.r.o.</a>
-							</div>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/p-5.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/p-4.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/p-3.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/p-2.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/p-1.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+		<footer class="footer py-16 bg-primary">
+			<div class="container">
+				<div class="row align-items-center g-6 justify-content-center">
+					<div class="col-lg-4">
+						<a href="#" class="footer__logo">
+							<img src="images/content/logo.png" loading="lazy" alt="logo" />
+						</a>
+						<div class="text-md-medium mt-8 text-white text-lg-start text-center">
+							© Sparta Agency &
+							<a href="https://esportsmedia.cz/">eSports.cz s.r.o.</a>
 						</div>
-						<div class="col-lg-4">
-							<ul class="text-lg-medium text-center bg-primary text-white">
-								<li>Tennis Sparta Agency s.r.o.</li>
-								<li>Za Císařským mlýnem 1115/2</li>
-								<li>170 00 Praha 7</li>
-								<li>IČ: 28898028</li>
-								<li>DIČ: CZ28898028</li>
-							</ul>
+					</div>
+					<div class="col-lg-4">
+						<ul class="text-md-medium text-center bg-primary text-white d-grid gap-2">
+							<li>Tennis Sparta Agency s.r.o.</li>
+							<li>Za Císařským mlýnem 1115/2</li>
+							<li>170 00 Praha 7</li>
+							<li>IČ: 28898028</li>
+							<li>DIČ: CZ28898028</li>
+						</ul>
+					</div>
+					<div class="col-lg-4">
+						<div class="d-flex gap-2 justify-content-center">
+							<a href="#" class="footer__social">
+								<img src="images/ico/instagram.svg" loading="lazy" alt="instagram" />
+							</a>
+							<a href="#" class="footer__social">
+								<img src="images/ico/facebook.svg" loading="lazy" alt="facebook" />
+							</a>
 						</div>
-						<div class="col-lg-4">
-							<div class="d-flex g-2">
-								<a href="#" class="footer__social">
-									<img src="images/ico/instagram.svg" loading="lazy" alt="instagram" />
-								</a>
-								<a href="#" class="footer__social">
-									<img src="images/ico/facebook.svg" loading="lazy" alt="facebook" />
-								</a>
-							</div>
-							<a href="mailto:sparta@agency.cz">sparta@agency.cz</a>
-						</div>
+						<a class="text-white text-lg-black mt-6 text-center d-block" href="mailto:sparta@agency.cz">sparta@agency.cz</a>
 					</div>
 				</div>
 			</div>

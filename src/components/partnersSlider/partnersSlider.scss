@@ -1,0 +1,23 @@
+.partners-swiper {
+  .swiper-slide {
+    width: max-content;
+    margin: 0 1.25rem;
+    img {
+      height: 60px;
+      object-fit: contain;
+      width: auto;
+    }
+  }
+}
+.infinite-scroll-swiper {
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+}
+
+.partnersSlider {
+  padding-bottom: 54px;
+  @include media-breakpoint-down(md) {
+    padding-bottom: 40px;
+  }
+}

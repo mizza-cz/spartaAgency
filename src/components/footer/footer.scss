@@ -1,0 +1,34 @@
+.footer {
+  &__logo {
+    width: 132px;
+    height: 54px;
+    display: block;
+    @include media-breakpoint-down(lg) {
+      margin: 0 auto;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &__social {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    background-color: var(--color-light);
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    transition: all 0.3s;
+    &:hover {
+      transform: scale(1.05);
+    }
+    img {
+      width: 18px;
+      height: 18px;
+      object-fit: contain;
+    }
+  }
+}
