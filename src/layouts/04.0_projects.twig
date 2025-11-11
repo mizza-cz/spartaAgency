@@ -1,0 +1,96 @@
+{% extends "@components/base/base.twig" %} {% set title = "04.0_projects" %} {%
+block main %}
+
+<section class="bg-gradient py-lg-20 py-12">
+  <div class="container">
+    <h1 class="h2 title title--dot text-white mb-lg-17 mb-10">
+      NAŠE <span>PROJEKTY</span>
+    </h1>
+
+    <div class="row gx-xxl-20 gx-10 gy-xxl-18 gy-md-14 gy-10">
+      {% for i in 1..3 %}
+      <div class="col-xl-4 col-md-6">
+        <a href="#" class="projectCard">
+          <div class="projectCard__img">
+            <img
+              srcset="
+                https://picsum.photos/856/1064 856w,
+                https://picsum.photos/428/532  428w
+              "
+              alt="project"
+              width="428"
+              height="532"
+              loading="lazy"
+            />
+          </div>
+          <div
+            class="d-flex gap-3 align-items-center justify-content-between mt-4"
+          >
+            <div class="text-lg-black text-white">Livesport Prague Open</div>
+            <img
+              src="images/ico/arrow-link-white.svg"
+              class="ico-arrowCard"
+              alt="arrow"
+            />
+          </div>
+        </a>
+      </div>
+      <div class="col-xl-4 col-md-6">
+        <a href="#" class="projectCard">
+          <div class="projectCard__img">
+            <img
+              srcset="
+                https://picsum.photos/856/1064 856w,
+                https://picsum.photos/428/532  428w
+              "
+              alt="project"
+              width="428"
+              height="532"
+              loading="lazy"
+            />
+          </div>
+          <div
+            class="d-flex gap-3 align-items-center justify-content-between mt-4"
+          >
+            <div class="text-lg-black text-white">Livesport Prague Open</div>
+            <img
+              src="images/ico/arrow-link-white.svg"
+              class="ico-arrowCard"
+              alt="arrow"
+            />
+          </div>
+        </a>
+      </div>
+      <div class="col-xl-4 col-md-6">
+        <a href="#" class="projectCard">
+          <div class="projectCard__img">
+            <img
+              srcset="
+                https://picsum.photos/856/1064 856w,
+                https://picsum.photos/428/532  428w
+              "
+              alt="project"
+              width="428"
+              height="532"
+              loading="lazy"
+            />
+          </div>
+          <div
+            class="d-flex gap-3 align-items-center justify-content-between mt-4"
+          >
+            <div class="text-lg-black text-white">
+              Livesport Prague Open Prague Open
+            </div>
+            <img
+              src="images/ico/arrow-link-white.svg"
+              class="ico-arrowCard"
+              alt="arrow"
+            />
+          </div>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% include "@components/joinUs-section/joinUs-section.twig" %} {% endblock %}
