@@ -17,29 +17,32 @@
   }
   &__title {
     color: var(--color-light);
-    font-weight: 100;
-    font-size: 70px;
-    line-height: 76px;
+
     letter-spacing: 0.07em;
     text-shadow: 0 0 19px #ffffff59;
+
+    font-size: 90px;
+    line-height: 76px;
+    font-weight: 900;
     @include media-breakpoint-down(lg) {
-      font-size: 40px;
+      font-size: 52px;
       line-height: 100%;
     }
+
     span {
       display: block;
-      font-size: 90px;
+      font-weight: 100;
+      font-size: 70px;
       line-height: 76px;
-      font-weight: 900;
       @include media-breakpoint-down(lg) {
-        font-size: 52px;
+        font-size: 40px;
         line-height: 100%;
       }
     }
   }
 
   &__aside {
-    width: 428px;
+    width: 430px;
     min-width: 320px;
     position: relative;
     height: 100%;
@@ -78,8 +81,9 @@
 
 .detail-sportsman__img {
   width: 100%;
-  aspect-ratio: 428/633;
+  aspect-ratio: 430/633;
   position: relative;
+  padding: 0 1px;
   &::before {
     content: "";
     position: absolute;
@@ -155,7 +159,7 @@
 .detail-section__logo {
   color: var(--color-light);
   text-align: center;
-   
+
   &-img {
     width: 21px;
     height: 34px;

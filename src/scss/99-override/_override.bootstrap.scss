@@ -27,10 +27,13 @@
 .bg-primary {
   background: var(--color-primary) !important;
 }
-.hover-outline{
+.hover-outline {
   text-decoration-color: transparent;
-  &:hover{
+  &:hover {
     text-decoration-color: inherit;
   }
+}
+.shadow-text {
+  text-shadow: 0 0 11px #ffffff80;
 }
 /*! purgecss end ignore */
